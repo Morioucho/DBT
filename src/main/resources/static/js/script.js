@@ -10,3 +10,7 @@ function ssgNavigate(){
 function ssbNavigate(){
     window.location = "ssb.html";
 };
+//Function to get to Unique HTML File
+function uniqueNavigate(){
+    window.location = "unique.html";
+};
