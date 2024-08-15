@@ -1,0 +1,34 @@
+h1 {
+    color: yellow
+}
+
+body {
+    color: #ffdd00
+}
+
+h1 {
+    font-family: "Times New Roman", Times, serif;
+}
+
+.button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+img {
+    opacity: 1.0;
+}
+
+body {
+    background-image: url(https://wallpapers.com/images/hd/original-super-saiyan-goku-dbz-4k-x19s4xbfj92d87h2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
