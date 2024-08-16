@@ -1,2 +1,16 @@
-document.getElementById("https://i.redd.it/brxf00vp13d61.jpg").onclick = window.location = "ssj.html";
-document.getElementById("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6874497c-ac41-4ba9-b760-c350edd1a0e2/defi6i9-55a285ed-9d62-4931-a1cc-3b5cf9731d96.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzY4NzQ0OTdjLWFjNDEtNGJhOS1iNzYwLWMzNTBlZGQxYTBlMlwvZGVmaTZpOS01NWEyODVlZC05ZDYyLTQ5MzEtYTFjYy0zYjVjZjk3MzFkOTYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.o_vneFo6-d5ibGk14Yhv6DwKFFlNZpAD01ztH5x1-q8").onclick = window.location = "ssb.html";
+//Function to get to SSJ HTML File.
+function ssjNavigate(){
+    window.location = "ssj.html";
+};
+//Function to get to SSG HTML File.
+function ssgNavigate(){
+    window.location = "ssg.html";
+};
+//Function to get to SSB HTML File.
+function ssbNavigate(){
+    window.location = "ssb.html";
+};
+//Function to get to Unique HTML File
+function uniqueNavigate(){
+    window.location = "unique.html";
+};
