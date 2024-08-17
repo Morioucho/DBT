@@ -107,6 +107,7 @@ body, html {
     color: white;
     border-radius: 7px;
     transition: background-color 0.3s ease;
+    font-family: 'Inter', sans-serif;
 }
 
 /* OVERLAY EVENTS                                               */
