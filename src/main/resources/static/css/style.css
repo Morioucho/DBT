@@ -1,21 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-h1 {
-    color: yellow
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: #222222;
 }
 
-body {
-    color: #ffdd00
+.container {
+    text-align: center;
 }
 
-h1 {
-    font-family: "", Times, serif;
+.button-container {
+    text-align: center;
 }
 
-img {
-    opacity: 1.0;
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
+.image_button {
+    background: none;
+    border: none;
+    margin: 15 30px;
+    padding: 0;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+    border-radius: 7px;
+}
 
+.image_button img {
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    border-radius: 7px;
+}
 
+.image_button img:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
+}
 
-  
+.button-container:hover .image_button img {
+    filter: grayscale(100%); 
+}
+
+.button-container .image_button:hover img {
+    filter: none; 
+}
