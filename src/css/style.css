@@ -83,16 +83,17 @@ body, html {
     flex-direction: column;
 }
 
-.overlay-content {
+.overlay_content {
     text-align: center;
 }
 
-.overlay-title {
+.overlay_title {
     font-size: 2em;
     margin-bottom: 20px;
+    font: "Inter"
 }
 
-.overlay-button {
+.overlay_button {
     padding: 15px 30px;
     font-size: 1.5em;
     cursor: pointer;
@@ -103,7 +104,7 @@ body, html {
     transition: background-color 0.3s ease;
 }
 
-.overlay-button:hover {
+.overlay_button:hover {
     background-color: #555;
 }
 
