@@ -66,3 +66,48 @@ body, html {
 .button-container .image_button:hover img {
     filter: none; 
 }
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    flex-direction: column;
+}
+
+.overlay-content {
+    text-align: center;
+}
+
+.overlay-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.overlay-button {
+    padding: 15px 30px;
+    font-size: 1.5em;
+    cursor: pointer;
+    border: none;
+    background: #333;
+    color: white;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.overlay-button:hover {
+    background-color: #555;
+}
+
+.overlay.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
