@@ -1,3 +1,7 @@
+/* This style follows roughly the same principle as   */
+/* the main "style.css" file therefore the contents   */
+/* won't be as much described but will have info.     */
+
 body, html {
     margin: 0;
     padding: 0;
@@ -13,6 +17,10 @@ body, html {
     width: 100%;
     height: 100%;
 }
+
+/* LEFT PANEL                                           */
+/* Creation of a left and right panel to properly split */
+/* the image and the text.                              */
 
 .left_panel {
     width: 800px; 
@@ -33,6 +41,10 @@ body, html {
     border-radius: 7px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.75);
 }
+
+/* Similar to the left panel, the right panel   */
+/* is used to keep the text-based stuff in this */
+/* panel.                                       */
 
 .right_panel {
     flex: 1;
