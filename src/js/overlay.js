@@ -1,12 +1,13 @@
+// Same principle as script.js, you got this...
 document.addEventListener("DOMContentLoaded", function () {
     const overlayButton = document.getElementById('overlay_button');
     const overlay = document.getElementById('overlay');
     const buttonsSection = document.getElementById('buttons');
 
     overlayButton.addEventListener('click', () => {
-        // Smoothly fade out the overlay
+        // Induce the css fade in style.css.
         overlay.classList.add('hidden');
-        // Optionally, scroll to the buttons section if needed
+        // Make sure the buttons are actually in view.
         buttonsSection.scrollIntoView({
             behavior: 'smooth'
         });

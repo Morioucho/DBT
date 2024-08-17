@@ -67,13 +67,18 @@ body, html {
     filter: none; 
 }
 
+/* OVERLAY                                                       */
+/* This is all the code for the overlay stuff, the code below    */
+/* makes the overlay hide the content behind and force the user  */
+/* to click a button                                             */
+
 .overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 1);
     color: white;
     display: flex;
     justify-content: center;
@@ -90,20 +95,23 @@ body, html {
 .overlay_title {
     font-size: 2em;
     margin-bottom: 20px;
-    font: "Inter"
+    font-family: 'Inter', sans-serif;
 }
 
 .overlay_button {
-    padding: 15px 30px;
+    padding: 10px 60px;
     font-size: 1.5em;
     cursor: pointer;
     border: none;
-    background: #333;
+    background: #333333;
     color: white;
-    border-radius: 10px;
+    border-radius: 7px;
     transition: background-color 0.3s ease;
 }
 
+/* OVERLAY EVENTS                                               */
+/* The following runs when you hover over or click the button.  */
+/* It reveals all the buttons behind it when clicked            */
 .overlay_button:hover {
     background-color: #555;
 }
