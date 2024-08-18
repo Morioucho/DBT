@@ -1,87 +1,82 @@
 <html>
-  <head>
-    <!-- Defining the meta variables so the browser knows how to view the page.-->
-    <meta charset="UTF8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Setting the title of the page and linking the CSS file.-->
-    <title>Dragon Ball Transformations</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" type="image/x-icon" href="images/favicon/DragonBallFavicon.png"/>
-  </head>
+<head>
+  <!-- Defining the meta variables so the browser knows how to view the page.-->
+  <meta charset="UTF8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <body>
-    <!-- Creating a div for EACH GROUP.-->
-    <!-- This is useful so that everything is organized better. (Unlike Cid)-->
-    <div class="container">
-      <div class="button_container">
+  <!-- Setting the title of the page and linking the CSS file.-->
+  <title>Dragon Ball Transformations</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/x-icon" href="images/favicon/DragonBallFavicon.png" />
+</head>
 
-        <!-- The "row" class is for each row of buttons, 3 on top and 2 on the bottom.-->
-        <div class="row">
-          <button class="image_button">
-            <a href="../src/pages/SSJ.html">
-              <img 
-                src="images/SuperSaiyan.png" 
-                alt="Super Saiyan" 
-              />
-            </a>
-          </button>
+<body>
+  <!-- Creating a div for EACH GROUP.-->
+  <!-- This is useful so that everything is organized better. (Unlike Cid)-->
+  <div class="container">
+    <div class="button_container">
 
-          <button class="image_button">
-            <a href="../src/pages/SSG.html">
-              <img 
-                src="images/SuperSaiyanGod.png" 
-                alt="Super Saiyan God" 
-              />
-            </a>
-          </button>
+      <!-- The "row" class is for each row of buttons, 3 on top and 2 on the bottom.-->
+      <div class="row">
+        <button class="image_button">
+          <a href="../src/pages/SSJ.html">
+            <img src="images/SuperSaiyan.png" alt="Super Saiyan" />
+          </a>
+        </button>
 
-          <button class="image_button">
-            <a href="../src/pages/SSB.html">
-              <img 
-                src="images/SuperSaiyanBlue.png" 
-                alt="Super Saiyan Blue" 
-              />
-            </a>
-          </button>
-        </div>
+        <button class="image_button">
+          <a href="../src/pages/SSG.html">
+            <img src="images/SuperSaiyanGod.png" alt="Super Saiyan God" />
+          </a>
+        </button>
 
-        <!-- The same "row" class, just the bottom 2 buttons this time.-->
-        <div class="row">
-          <button class="image_button">
-            <a href="../src/pages/MUI.html">
-              <img 
-                src="images/MUI.png" 
-                alt="Mastered Ultra Instinct" 
-              />
-            </a>
-          </button>
-
-          <button class="image_button">
-            <a href="../src/pages/UE.html">
-              <img 
-                src="images/UE.png" 
-                alt="Ultra Ego" 
-              />
-            </a>
-          </button>
-        </div>
+        <button class="image_button">
+          <a href="../src/pages/SSB.html">
+            <img src="images/SuperSaiyanBlue.png" alt="Super Saiyan Blue" />
+          </a>
+        </button>
       </div>
 
-      <div class="overlay" id="overlay">
-        <div class="overlay_content">
-          <h2 class="overlay_title">Dragon Ball Transformations</h2>
-          <button class="overlay_button" id="overlay_button">Enter</button>
-        </div>
+      <!-- The same "row" class, just the bottom 2 buttons this time.-->
+      <div class="row">
+        <button class="image_button">
+          <a href="../src/pages/MUI.html">
+            <img src="images/MUI.png" alt="Mastered Ultra Instinct" />
+          </a>
+        </button>
+
+        <button class="image_button">
+          <a href="../src/pages/UE.html">
+            <img src="images/UE.png" alt="Ultra Ego" />
+          </a>
+        </button>
       </div>
     </div>
 
-    <!-- Creating the audio so that it may be played. -->
-    <audio id="hover_sound" src="sounds/Hover Sound.mp3"></audio>
+    <div class="easteregg" id="easteregg">
+      <button class="eastereggbutton">
+        <a href="../src/pages/DillyDally.html">
+          <img src="images/BornToDillyDally.png" alt="Dilly Dally" />
+        </a>
+      </button>
+    </div>
 
-    <!-- Linking the script at the END OF THE FILE. -->
-    <!-- This is so that everything is loaded before the script runs.-->
-    <script src="js/overlay.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+    <div class="overlay" id="overlay">
+      <div class="overlay_content">
+        <h2 class="overlay_title">Dragon Ball Transformations</h2>
+        <button class="overlay_button" id="overlay_button">Enter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Creating the audio so that it may be played. -->
+  <audio id="hover_sound" src="sounds/Hover Sound.mp3"></audio>
+
+  <!-- Linking the script at the END OF THE FILE. -->
+  <!-- This is so that everything is loaded before the script runs.-->
+  <script src="js/overlay.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
