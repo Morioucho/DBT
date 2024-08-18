@@ -1,70 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* Creating a basic body and html that sets the background color and */
 /* centers everything.                                               */
-body, html {
-    height: 100%;
-    margin: 0;
-    display: flex;
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
 
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 
-    background-color: #222222;
+  background-color: #222222;
 }
-
 
 /* CONTAINERS                                                              */
 /* Making sure everything in the container is in the center of the screen. */
 .container {
-    text-align: center;
+  text-align: center;
 }
 
 .button-container {
-    text-align: center;
+  text-align: center;
 }
 
 /* ROWS                                                           */
 /* Remember the "row" class from index.html, now we're making the */
 /* spacing between the rows and such.                             */
 .row {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 /* BUTTONS                                                             */
 /* Now we're making the buttons have a bunch of properties that make   */
 /* them look much better in general, to name a few, there is drop      */
 /* shadow, margin, and border-radius (Google it if you need more info  */
-/* I can't easily fit a whole paragraph here...)                       */    
+/* I can't easily fit a whole paragraph here...)                       */
 .image_button {
-    background: none;
-    border: none;
-    margin: 15 30px;
-    padding: 0;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
-    border-radius: 7px;
+  background: none;
+  border: none;
+  margin: 15 30px;
+  padding: 0;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+  border-radius: 7px;
 }
 
 .image_button img {
-    width: 300px;
-    height: 300px;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-    border-radius: 7px;
+  width: 300px;
+  height: 300px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border-radius: 7px;
 }
 
 /* TRANSITION                                                                */
 /* Remember the image buttons from before, now we're making them transform   */
 /* when they are hovered over to make a clean looking effect.                */
 .image_button img:hover {
-    transform: scale(1.1);
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
+  transform: scale(1.1);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
 }
 
 .button-container .image_button:hover img {
-    filter: none; 
+  filter: none;
 }
 
 /* OVERLAY                                                       */
@@ -73,51 +73,68 @@ body, html {
 /* to click a button                                             */
 
 .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 1);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    transition: opacity 0.5s ease, visibility 0.5s ease;
-    flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 1);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  flex-direction: column;
 }
 
 .overlay_content {
-    text-align: center;
+  text-align: center;
 }
 
 .overlay_title {
-    font-size: 2em;
-    margin-bottom: 20px;
-    font-family: 'Inter', sans-serif;
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-family: "Inter", sans-serif;
 }
 
 .overlay_button {
-    padding: 10px 60px;
-    font-size: 1.5em;
-    cursor: pointer;
-    border: none;
-    background: #333333;
-    color: white;
-    border-radius: 7px;
-    transition: background-color 0.3s ease;
-    font-family: 'Inter', sans-serif;
+  padding: 10px 60px;
+  font-size: 1.5em;
+  cursor: pointer;
+  border: none;
+  background: #333333;
+  color: white;
+  border-radius: 7px;
+  transition: background-color 0.3s ease;
+  font-family: "Inter", sans-serif;
 }
 
 /* OVERLAY EVENTS                                               */
 /* The following runs when you hover over or click the button.  */
 /* It reveals all the buttons behind it when clicked            */
 .overlay_button:hover {
-    background-color: #555;
+  background-color: #555;
 }
 
 .overlay.hidden {
-    opacity: 0;
-    visibility: hidden;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.hidden-button {
+  width: 200px; 
+  height: 100px; 
+  position: fixed; 
+  top: 0;
+  left: 0; 
+  opacity: 0; 
+  z-index: -1; 
+  border: none; 
+}
+
+.hidden-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
